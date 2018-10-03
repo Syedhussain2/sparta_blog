@@ -4,12 +4,12 @@ class User < ApplicationRecord
 
   validates :first_name, :presence => true
   validates :first_name, :format => {
-    :with => /\A[a-zA-Z]+(?: [a-zA-Z]+)?\z/ :message => 'Please enter letters only'
+    :with => /\A[a-zA-Z]+(?: [a-zA-Z]+)?\z/, :message => 'Please enter letters only'
   }
 
   validates :last_name, :presence => true
   validates :last_name, :format => {
-    :with => /\A[a-zA-Z]+(?: [a-zA-Z]+)?\z/ :message => 'Please enter letters only'
+    :with => /\A[a-zA-Z]+(?: [a-zA-Z]+)?\z/, :message => 'Please enter letters only'
   }
 
   def full_name
