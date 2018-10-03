@@ -22,3 +22,12 @@
 <% end  %>
 <%= link_to 'Edit', edit_user_path(@user) %> |
 <%= link_to 'Back', users_path %>
+<ul class='list-group'>
+  <li class='list-group-item'>
+    <% @user.comments.each do |comment| %>
+    <%= link_to edit_blog_comment_path(@user, comment) do%>
+    <%= comment.body %>
+    <% end %>
+      <% end  %>
+  </li>
+</ul>
