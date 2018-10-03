@@ -1,0 +1,28 @@
+body {
+background: url('image1.jpeg');
+background-repeat:no-repeat;
+background-position: center;
+background-size: 100%;
+}
+
+.jumbotron:hover{
+  color:rgba(170, 27, 42, 0.6);
+  .btn:hover {
+    color: rgb(43, 3, 22);
+  }
+}
+
+
+.navbar {
+  background-color: rgbA(255, 0, 122, 0.8);
+.navbar-brand:hover{
+  background-color: rgbA(231, 127, 230, 0.6);
+.navbar-nav{
+  background-color: rgbA(255, 0, 122, 0.6);
+}
+}
+}
+
+.table{
+background-color: rgbA(77, 181, 247, 0.6);
+}
